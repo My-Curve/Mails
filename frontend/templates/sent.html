@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Hello This is the mail Body</h1>
+
+<div class="container">
+    <div class="row">
+        <form action=""  method="POST">
+            {%  csrf_token %}
+            <label for="username">Enter Your subject</label>
+            <input type="text" name="subject" id="" placeholder="Enter Your Username">
+            <br>
+            <label for="message">The the Message Body</label>
+            <textarea name="message" id="" cols="30" rows="10">Message Body</textarea>
+            <br>
+            <label for="receiver_mail">Recipient Email</label>
+            <input type="text" name="receiver_mail" id="">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
