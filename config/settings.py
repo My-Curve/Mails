@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     #app Installation
-    'send_mails'
+    'send_mails',
+    'bulk_sms',
 ]
 
 MIDDLEWARE = [
