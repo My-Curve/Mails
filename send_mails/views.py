@@ -12,6 +12,6 @@ def SendView(request):
         email=request.POST.get('email')
         send_mail(subject,message,settings.EMAIL_HOST_USER,[email])
         return render(request,'sent.html',{'email':email})
-    context={}
     
-    return render(request,'sent.html',context)
+    
+    return render(request,'mail.html')
