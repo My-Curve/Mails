@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     #app Installation
+    'accounts',
     'send_mails',
     'bulk_sms',
 ]

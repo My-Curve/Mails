@@ -5,5 +5,6 @@ from django.urls import path,include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('',include('send_mails.urls',namespace='send_mails')),
-    path('bulk_sms/',include('bulk_sms.urls',namespace='bulk_sms'))
+    path('bulk_sms/',include('bulk_sms.urls',namespace='bulk_sms')),
+    path('accounts/',include('accounts.urls',namespace='accounts'))
 ]
