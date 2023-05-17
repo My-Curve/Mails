@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+LOGIN_REDIRECT_URL = 'login'
+LOGOUT_REDIRECT_URL = 'login'
 # Application definition
 
 INSTALLED_APPS = [
@@ -38,7 +39,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     #app Installation
-    'accounts',
     'send_mails',
     'bulk_sms',
 ]
@@ -133,7 +133,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'codewithkiash@gmail.com'
-EMAIL_HOST_PASSWORD = 'pfcywqrecujwtkdz'
+EMAIL_HOST_PASSWORD = 'tbjankkxdcfyzcjm'
 EMAIL_USE_TLS = True
 
         

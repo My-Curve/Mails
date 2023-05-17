@@ -1,0 +1,14 @@
+{%  if user.is_authenticated %}
+
+<p>Please you are Logged in as customer</p>
+
+<a href="{% url 'logout' %}">Please Logout after Pyaments to Process Your Bills</a>
+
+{% else %}
+    <h1>Customer Login</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Login">
+    </form>
+{% endif %}
